@@ -4,6 +4,17 @@ Image: Future Real Estate Investments. Source: Tierra Mallorca, Unsplash
 # Module 4 Final Project
 
 
+## README Outline
+* Introduction 
+** Project Summary ** 
+* Repo Contents
+* Prerequisites
+* Feature and Definitions
+** Results **
+* Future Work
+* Built With, Contributors, Authors, Acknowledgments
+
+
 ## Introduction
 For my Flatiron Module 4 project, I will be forecasting real estate prices of various zip codes using data from Zillow. I will be acting as a consultant for a fictional real-estate investment firm and need to build a time series model to justify my findings. The firm has asked me to determine:
 
@@ -12,7 +23,7 @@ For my Flatiron Module 4 project, I will be forecasting real estate prices of va
 > What zip codes in New England’s villages will bring the best five year future return?
 
 
-## Final Project Summary
+## Project Summary
 For investers looking to buy a property in a quaint New England village, where there town sizes are not too small, nor are the towns considered a suburb or major sprawling city, I have narrowed the field of possibilities and created a model that can forecast with limited certainly the region that is likely to show growth.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/Percent_Change_Zipcode.png)
@@ -21,7 +32,7 @@ These are the top twelve zip codes, two from each New England state, that were u
 Using my predicted results from my SARIMAX Time Series model and calculated RMSE scores I would recommend the Rhode Island zip code of 02882 as the region with best possibility for investment growth over the next five years. While there certainly are other zip codes around the country and even in New England that may have better growth, only towns with a population of around 10,000 were considered.
 
 
-## Contents
+## Repo Contents
 This repo contains the following:
 * README.md - this is where you are now!
 * CONTRIBUTING.md - a reference to the people who made this project possible.
@@ -57,7 +68,7 @@ These are the libraries that I used in this project.
 * import folium (for visual)
  
  
-## Feature and Definitions
+## Features and Definitions
 The three datasets below I used each had there own individual nuances that needed to be dealt with during cleaning.
 
 #### zillow_data.csv - the original file containing the dataset from Zillow 
@@ -97,21 +108,13 @@ This dataset was confusing in the way the population was organized. The populati
 *geo_id
 
 
-## Future Work
-I would first like to apply my model to rural towns or the large cities in New England. I would like to focus on zip code demographics or perhaps population density.
-
-More importantly, I would like to use towns or village names instead of zip code to build my model. In doing research of various regions I discovered that zip code lines tend to be drawn differently than how neighborhoods develop or how real estate values seem to be considered. It is quite possible to find two very different houses in the same zip code with varying degree of price and selectability, for zip code location tends to be much more broad than town or county lines. As well, zip code relates to the population density which I believe is an important factor to consider when buying a house, yet only total population numbers were included in my model.
-
-Outside of investment, a regions schools, employment opportunities, and relationship to tourism are huge factors to consider. These factors can greatly effect the housing market.
-
-For future work I would also consider looking at regions outside of New England, though I really like being able to narrow the field down to a relatively small group of interesting zip codes.
-
-
 ## Results
-![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/RH_Partial_AutoCor.png)
-Partial Autocorrelation graph for RH zip code. Used in addition to the Autocorrelation graph to help determine the parameters for the time series model.
+According to the business plan and time series model, the small, coastal zip code of 02882 in Rhode Island had the highest possible five year growth in relation to it's current housing market. 
 
-After having checked all the correlograms to make sure that the p-d-q values looked good I went ahead and ran the SARIMAX models and used the lowest AIC scores to determine the best fit. I then coded the RMSE values to help me analyze the results of the forecast.
+Below is a Partial Autocorrelation graph for the final RH zip code. Used in addition to the Autocorrelation graph to help determine the parameters for the time series model.
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/RH_Partial_AutoCor.png)
+
+After having checked all the correlograms to make sure that the p-d-q values looked good I went ahead and ran the SARIMAX models (once for each of the six final zip codes) and used the lowest AIC scores to determine the best fit. I then coded the RMSE values to help me analyze the results of the forecast.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/RH_Future_Predictions.png)
 Home price averages for RH zip code 02882 for all the data. The five year future prediction is shaded in yellow, which includes possible high and low for the forcast.
@@ -130,6 +133,18 @@ The second highest predicted value came from Maine zip code 04105 with a predict
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/morning-brew-SQ5Lx-pCvDI-unsplash.jpg)
 Image: Future housing price predictions using a SARIMAX Time Series Model. Source: Morning Brew, Upsplash
 
+
+## Future Work
+I would like to apply my model to other rural towns or the large cities in New England. I would like to include specific zip code demographics or perhaps population density.
+
+More importantly, I would like to use towns or village names instead of zip code to build my model. In doing research of various regions I discovered that zip code lines tend to be drawn differently than how neighborhoods develop or how real estate values seem to be considered. It is quite possible to find two very different houses in the same zip code with varying degree of price and selectability, for zip code location tends to be much more broad than town or county lines. As well, zip code relates to the population density which I believe is an important factor to consider when buying a house, yet only total population numbers were included in my model.
+
+Outside of investment, a regions schools, employment opportunities, and relationship to tourism are huge factors to consider. These factors can greatly effect the housing market.
+
+For future work I would also consider looking at regions outside of New England, though I really like being able to narrow the field down to a relatively small group of interesting zip codes.
+
+
+
 ## Built With:
 Jupyter Notebook
 MacBook Air - Catalina OS
@@ -137,7 +152,7 @@ Python 3.0
 statsmodels libraries
 scikit.learn
 
-## Contributing
+## Contributors
 Please read CONTRIBUTING.md for details
 
 ## Authors
