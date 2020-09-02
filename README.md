@@ -6,11 +6,11 @@ Image: Future Real Estate Investments. Source: Tierra Mallorca, Unsplash
 
 ## README Outline
 * Introduction 
-** Project Summary ** 
+* Project Summary
 * Repo Contents
 * Prerequisites
 * Feature and Definitions
-** Results **
+* Results
 * Future Work
 * Built With, Contributors, Authors, Acknowledgments
 
@@ -37,14 +37,12 @@ This repo contains the following:
 * README.md - this is where you are now!
 * CONTRIBUTING.md - a reference to the people who made this project possible.
 * LICENSE.md - the required license information.
-
 * Final_Notebook.ipynb - the Jupyter Notebook containing the finalized code for this project.
 * zillow_data.csv - the file containing the dataset which comes from Zillow (https://www.zillow.com/research/data/)
 * zip_code_database.csv - file containing zip code lat/lon (https://www.unitedstateszipcodes.org/zip-code-database/)
 * population_by_zip_2010.csv - https://www.kaggle.com/census/us-population-by-zip-code#population_by_zip_2010.csv
 * new_england.gif - a free map of New England to help me look at the geography.
 * Notebook_Folder - a folder of extra notebooks, documents, and code that helped me along the way.
-
 * mod_4_project_blog_link - the link to my Medium blog post pertaining to this project.
 * mod_4_project_slideshow_pdf - a pdf of my non-technical presentation
 * mod_4_project_video_link - a video of my non-technical presentation
@@ -151,6 +149,7 @@ MacBook Air - Catalina OS
 Python 3.0
 statsmodels libraries
 scikit.learn
+GitHub
 
 ## Contributors
 Please read CONTRIBUTING.md for details
