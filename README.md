@@ -18,16 +18,17 @@ Image: Future Real Estate Investments. Source: Tierra Mallorca, Unsplash
 ## Introduction
 For my Flatiron Module 4 project, I will be forecasting real estate prices of various zip codes using data from Zillow. I will be acting as a consultant for a fictional real-estate investment firm and need to build a time series model to justify my findings. The firm has asked me to determine:
 
-![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/Top_6_Zipcodes.png)
-
 > What zip codes in New England’s villages will bring the best five year future return?
+
+![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/Top_6_Zipcodes.png)
+*The top twelve zip codes that I were assessed according to my business plan on a folium map. I had to merge the dataset with a secondary source which included latitude and longitude in order to plot these.* 
 
 
 ## Project Summary
 For investers looking to buy a property in a quaint New England village, where there town sizes are not too small, nor are the towns considered a suburb or major sprawling city, I have narrowed the field of possibilities and created a model that can forecast with limited certainly the region that is likely to show growth.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/Percent_Change_Zipcode.png)
-These are the top twelve zip codes, two from each New England state, that were used after filtering the dataset according to the business plan. Graph represents the past three periods examined.
+*These are the top twelve zip codes, two from each New England state, that were used after filtering the dataset according to the business plan. Graph represents the past three periods examined.*
 
 Using my predicted results from my SARIMAX Time Series model and calculated RMSE scores I would recommend the Rhode Island zip code of 02882 as the region with best possibility for investment growth over the next five years. While there certainly are other zip codes around the country and even in New England that may have better growth, only towns with a population of around 10,000 were considered.
 
@@ -109,18 +110,18 @@ This dataset was confusing in the way the population was organized. The populati
 ## Results
 According to the business plan and time series model, the small, coastal zip code of 02882 in Rhode Island had the highest possible five year growth in relation to it's current housing market. 
 
-Below is a Partial Autocorrelation graph for the final RH zip code. Used in addition to the Autocorrelation graph to help determine the parameters for the time series model.
+Below is a Partial Autocorrelation graph for the final RH zip code. This graph was used in addition to the Autocorrelation graph to help determine the parameters for the time series model.
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/RH_Partial_AutoCor.png)
 
 After having checked all the correlograms to make sure that the p-d-q values looked good I went ahead and ran the SARIMAX models (once for each of the six final zip codes) and used the lowest AIC scores to determine the best fit. I then coded the RMSE values to help me analyze the results of the forecast.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/RH_Future_Predictions.png)
-Home price averages for RH zip code 02882 for all the data. The five year future prediction is shaded in yellow, which includes possible high and low for the forcast.
+*Home price averages for RH zip code 02882 for all the data. The five year future prediction is shaded in yellow, which includes possible high and low for the forcast.*
 
 The Rhode Island zip code of 02882 showed the best change in value for the mean of predictions at 34.93% even though it had one of the larger RMSE scores of 1189.54. Yet considering the price of houses for this region were nearly double that of some of the other regions it means that this prediction is still the best. 
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/RH_Predicted_Forcast.png)
-The five year future predictions for just the Rhode Island zip code 02882.
+*The five year future predictions for just the Rhode Island zip code 02882.*
 
 Conneticut's zip code of 06382 had the best RMSE of 492.69 but also had one of the cheapest housing prices - along with only an 11.11% predicted change in value it seems like not the top choice. It's interesting to note that this zip code is near the ocean but doesn't actually have any ocean-front properties.
 
