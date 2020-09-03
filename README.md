@@ -1,5 +1,5 @@
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg)
-*Image: Future Real Estate Investments. Source: Tierra Mallorca, Unsplash
+*Image: Future Real Estate Investments. Source: Tierra Mallorca, Unsplash*
 
 # Module 4 Final Project
 
@@ -131,7 +131,7 @@ New Hampshire had the worst predicted value and the only forecasted score that w
 The second highest predicted value came from Maine zip code 04105 with a predicted change of 23.88%. This was interesting considering the top two zip codes were along the ocean coast. Yet again, the RMSE was the second highest of 1496.72 which correlated with having the second highest current house price.
 
 ![](https://raw.githubusercontent.com/twhipple/dsc-mod-4-project-v2-1-online-ds-pt-090919/master/Images/morning-brew-SQ5Lx-pCvDI-unsplash.jpg)
-*Image: Future housing price predictions using a SARIMAX Time Series Model. Source: Morning Brew, Upsplash
+*Image: Future housing price predictions using a SARIMAX Time Series Model. Source: Morning Brew, Upsplash*
 
 
 ## Future Work
