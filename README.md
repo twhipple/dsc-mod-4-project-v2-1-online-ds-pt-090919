@@ -59,7 +59,7 @@ This repo contains the following:
   (https://docs.google.com/presentation/d/1h0DkuZIOwfLfhYPTDLhRe9GqbTyQu_UW1I-Rqo0PAPk/edit?usp=sharing)
 
 
-## Prerequisites
+## Libraries & Prerequisites
 These are the libraries that I used in this project.
 * numpy as np
 * pandas as pd
@@ -114,7 +114,7 @@ This dataset was confusing in the way the population was organized. The populati
 *geo_id
 
 
-## Results
+## Conclusions
 According to the business plan and time series model, the small, coastal zip code of 02882 in Rhode Island had the highest possible five year growth in relation to it's current housing market. 
 
 Below is a Partial Autocorrelation graph for the final RH zip code. This graph was used in addition to the Autocorrelation graph to help determine the parameters for the time series model.
